@@ -1,0 +1,116 @@
+    :root {
+        --primary-color: #fce7f3;
+        --secondary-color: rgb(212, 175, 55);
+        --text-color: #000;
+        --accent-color: #d44fd4;
+    }
+
+    .header {
+        margin-top: -35px;
+        background: linear-gradient(90deg, #FCE2EB 0%, #F8BFD3 100%);
+        padding: 3rem 0;
+        text-align: center;
+        border-bottom: 3px solid var(--secondary-color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+        color: var(--accent-color);
+        font-size: 50px;
+        font-weight: 600;
+        margin: 0;
+        letter-spacing: 2px;
+
+    }
+
+    .header p {
+        color: var(--text-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+    }
+    .agb-container{
+        width: 70%;
+        padding: 100px 0;
+        margin: 0 auto;
+    }
+
+
+
+    .section {
+        margin-bottom: 2.5rem;
+        background: white;
+        border-radius: 8px;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid var(--secondary-color);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .section h2{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--accent-color);
+        margin-top: 0;
+        font-size: 1.6rem;
+        border-bottom: 1px dashed var(--secondary-color);
+        padding-bottom: 0.5rem;
+    }
+    .section p{
+        margin-top: 20px;
+    }
+    .section h3{
+        margin-top: 20px;
+        color: var(--secondary-color);
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+
+    .section ul {
+        padding-left: 1.2rem;
+    }
+
+    .section li {
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+
+    .section li:before {
+        content: "•";
+        color: var(--secondary-color);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .highlight-box {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: 6px;
+        margin: 1rem 0;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+
+
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .agb-container{
+            width: 90%;
+            padding: 50px 0;
+        }
+
+        .section {
+            padding: 1rem 1.2rem;
+        }
+    }
